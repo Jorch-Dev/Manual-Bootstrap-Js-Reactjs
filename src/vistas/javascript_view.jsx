@@ -2,6 +2,7 @@
 // let -> block, funciona en el bloque de codigo,puede cambiar su valor
 // const -> block, funciona en el bloque de codigo,no puede cambiar su valor
 import React from "react";
+import { TeacherClass } from "../components/teacher_component"
 
 export const Javascript = () => {
   const funcion1 = () => {
@@ -126,6 +127,40 @@ const funcion14 = () => {
   console.log(combined)
 }
 
+const funcion15 = () => {
+  class Person {
+    constructor(name) {
+      this.name = name
+    }
+  }
+
+  const person = new Person("Jorge")
+  console.log(person)
+}
+
+const funcion16 = () => {
+  class Person {
+    constructor(name) {
+      this.name = name
+    }
+  }
+
+  class Teacher extends Person{
+    constructor(name, degree) {
+      super(name);
+      this.degree = degree;
+    }
+    
+  }
+
+  const resultado = new Teacher("Jorge","Dev")
+  console.log(resultado)
+}
+
+const funcion17 = () => {
+ const module = new TeacherClass("Jorch", "Tehua")
+ console.log(module)
+}
 
   return (
     <div className="container">
@@ -227,6 +262,33 @@ const funcion14 = () => {
         <div className="d-grid gap-2 col-3 mx-auto">
           <button className="btn btn-primary" onClick={funcion14}>
             spread operator object
+          </button>
+        </div>
+      </div>
+      <hr />
+      <div className="row my-5">
+        <h3>clases</h3>
+        <div className="d-grid gap-2 col-3 mx-auto">
+          <button className="btn btn-primary" onClick={funcion15}>
+            clase constructor
+          </button>
+        </div>
+      </div>
+      <hr />
+      <div className="row my-5">
+        <h3>Herencia</h3>
+        <div className="d-grid gap-2 col-3 mx-auto">
+          <button className="btn btn-primary" onClick={funcion16}>
+            Inheritance
+          </button>
+        </div>
+      </div>
+      <hr />
+      <div className="row my-5">
+        <h3>Modulos</h3>
+        <div className="d-grid gap-2 col-3 mx-auto">
+          <button className="btn btn-primary" onClick={funcion17}>
+            Module
           </button>
         </div>
       </div>

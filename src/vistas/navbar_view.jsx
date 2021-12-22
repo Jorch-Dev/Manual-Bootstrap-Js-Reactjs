@@ -28,7 +28,7 @@ export const Navbar_view = () => {
               <Link className="nav-link" to="/display_flex">
                 Div Flex
               </Link>
-              <Link className="nav-link" to="/displayflex_orientation">
+              <Link className="nav-link" to="/flex_orientation">
                 Flex Orientation
               </Link>
               <Link className="nav-link" to="/javascript">

@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-export const Display_flex_orientation = () => {
+export const Orientation_view = () => {
   return (
     <Fragment>
       <div className="container">

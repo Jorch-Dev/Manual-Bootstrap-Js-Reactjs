@@ -34,6 +34,9 @@ export const Navbar_view = () => {
               <Link className="nav-link" to="/javascript">
                 ECMAScript 6
               </Link>
+              <Link className="nav-link" to="/reactemail">
+                EmailEditor
+              </Link>
             </div>
           </div>
         </div>

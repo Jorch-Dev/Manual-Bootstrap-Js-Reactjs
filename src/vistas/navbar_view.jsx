@@ -32,10 +32,13 @@ export const Navbar_view = () => {
                 Flex Orientation
               </Link>
               <Link className="nav-link" to="/javascript">
-                ECMAScript 6
+                ECMAScript 6˝
               </Link>
               <Link className="nav-link" to="/reactemail">
                 EmailEditor
+              </Link>
+              <Link className="nav-link" to="/page">
+                Landing Page
               </Link>
             </div>
           </div>
